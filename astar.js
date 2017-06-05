@@ -133,7 +133,7 @@ var astar = {
     }
 
     if (closest) {
-      return pathTo(closestNode);
+       return pathTo(closestNode);
     }
 
     // No result was found - empty array signifies failure to find path.
