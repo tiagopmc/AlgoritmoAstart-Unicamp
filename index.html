@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <title>Algoritmo A*</title>
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="demo.css" />
+	</head>
+<body>
+	<div id="content">
+		<h3>Algoritmo A* para Desvio de Obstáculos e Gasto Mínimo de Energia</h3>
+
+	    <div id="controls" class='clear'>
+            <fieldset id=''>
+	    			<legend>Legenda:</legend>
+                    <div>
+	    			<span class="grid_item start" style="width: 14.25px; height: 14.25px; margin-right: 6px;" id="keyWeight3"></span> Caminho </div>
+	    			<div>
+	    			<span class="grid_item weight1" style="width: 14.25px; height: 14.25px; margin-right: 6px;" id="keyWeight3"></span> Terreno plano </div>
+	    			<div>
+	    			<span class="grid_item weight2" style="width: 14.25px; height: 14.25px; margin-right: 6px;" id="keyWeight3"></span> Terreno com declinio </div>
+	    			<div>
+	    			<span class="grid_item weight3" style="width: 14.25px; height: 14.25px; margin-right: 6px;" id="keyWeight3"></span> Cadeia motanhosa</div>
+	    			<div>
+	    			<span class="grid_item wall" style="width: 14.25px; height: 14.25px; margin-right: 6px;" id="keyWall"></span> Parede </div>
+	    		</fieldset>
+			
+	    </div>
+
+	    <div id="main">
+	    	<div id="search_grid">Carregando a propriedade</div>
+	    </div>
+
+	</div>
+	<div id="footer"></div>
+
+	<script type='text/javascript' src='jquery-1.7.1.min.js'></script>
+	<script type='text/javascript' src='astar.js'></script>
+	<!--<script type='text/javascript' src='../dist/astar-concat.js'></script>-->
+	<script type='text/javascript' src='demo.js'></script>
+</body>
+</html>
