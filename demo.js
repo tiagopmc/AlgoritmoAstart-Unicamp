@@ -211,8 +211,11 @@ GraphSearch.prototype.cellClicked = function($end) {
         this.drawDebugInfo();
         this.animatePath(path);
         //Final do algoritmo
-        console.log(this.graph);
-        $('#finalStatus').html(syntaxHighlight(this.graph.dirtyNodes));
+       
+        
+        var ultima_alteracao = this.graph.dirtyNodes.pop();
+        console.log(ultima_alteracao);
+        $('#finalStatus').html(syntaxHighlight(ultima_alteracao));
     }
 };
 GraphSearch.prototype.drawDebugInfo = function() {
